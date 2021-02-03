@@ -1,0 +1,18 @@
+<view class="home">
+	<view class="container">
+		<image wx:key="id" data-card="{{item}}" bindtap="tapZhuo" wx:for="{{allWan}}" src="{{item.img}}"></image>
+	</view>
+	<view class="container">
+		<image wx:key="id" data-card="{{item}}" bindtap="tapZhuo" wx:for="{{allTong}}" src="{{item.img}}"></image>
+	</view>
+	<view class="container">
+		<image wx:key="id" data-card="{{item}}" bindtap="tapZhuo" wx:for="{{allTiao}}" src="{{item.img}}"></image>
+	</view>
+	<view class="center">
+		<image wx:key="id" wx:for="{{huMa}}" src="{{item.img}}"></image>
+	</view>
+	<view class="bottom">
+		<image data-card="{{item}}" bindtap="tapShou" wx:key="id" wx:for="{{shouMa}}" src="{{item.img}}"></image>
+	</view>
+	<text class="clear" bindtap="onClearClick">清空</text>
+</view>

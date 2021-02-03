@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "麻将听牌器",
+    "navigationBarTextStyle":"black",
+    "pageOrientation":"landscape"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

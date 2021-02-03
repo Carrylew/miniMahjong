@@ -1,0 +1,38 @@
+/**index.wxss**/
+.home{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.center{
+  position: absolute;
+  bottom: 60rpx;
+  left: 0rpx;
+  right: 0rpx;
+  display: flex;
+  justify-content: center;
+}
+.bottom{
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  display: flex;
+  justify-content: center;
+}
+
+image {
+  border: 1rpx solid #A7A7A7;
+  height: 51.8rpx;
+  width: 39.2rpx;
+  margin: 2rpx;
+}
+.clear{
+  position: absolute;
+  top: 0rpx;
+}

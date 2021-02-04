@@ -18,13 +18,16 @@ Page({
     let tong = []
     let tiao = []
     shouMa.forEach(element => {
-      if (element.id > 20) {
-        tiao.push(element.id)
-      } else if (element.id > 10) {
-        tong.push(element.id)
-      } else {
-        wan.push(element.id)
+      if (!element.select) {
+        if (element.id > 20) {
+          tiao.push(element.id)
+        } else if (element.id > 10) {
+          tong.push(element.id)
+        } else {
+          wan.push(element.id)
+        }
       }
+
     });
     let result = calcTing(wan, tong, tiao)
     this.setData({
@@ -42,6 +45,28 @@ Page({
 
   //选择下方牌型后的点击事件
   tapShou: function (event) {
+    let item = event.target.dataset.card
+    let index = event.target.dataset.index
+    var newShouMa = []
+    this.data.shouMa.forEach((ele, i) => {
+      var newEle = {
+        ...ele,
+        select: false
+      }
+      if (i == index) {
+        if (!ele.select) {
+          newEle.select = true
+          newShouMa.push(newEle)
+        }
+      } else {
+        newShouMa.push(newEle)
+      }
+
+    })
+    this.clac(newShouMa)
+  },
+  //双击事件
+  onDoubleTap: function (event) {
     let item = event.target.dataset.card
     let newShouMa = []
     let flag = false

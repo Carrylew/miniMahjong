@@ -1,29 +1,38 @@
 /**index.wxss**/
-.home{
+.home {
   position: absolute;
   height: 100%;
   width: 100%;
 }
+
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.center{
+
+.center {
   position: absolute;
-  bottom: 60rpx;
+  bottom: 80rpx;
   left: 0rpx;
   right: 0rpx;
   display: flex;
   justify-content: center;
 }
-.bottom{
+
+.bottom {
   position: absolute;
   bottom: 0rpx;
   left: 0rpx;
   right: 0rpx;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+}
+
+.bottom-view {
+  display: flex;
+  flex-direction: column;
 }
 
 image {
@@ -32,7 +41,10 @@ image {
   width: 39.2rpx;
   margin: 2rpx;
 }
-.clear{
+
+.clear {
   position: absolute;
-  top: 0rpx;
+  top: 6rpx;
+  left: 6rpx;
+  font-size: 10rpx;
 }

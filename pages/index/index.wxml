@@ -12,7 +12,10 @@
 		<image wx:key="id" wx:for="{{huMa}}" src="{{item.img}}"></image>
 	</view>
 	<view class="bottom">
-		<image data-card="{{item}}" bindtap="tapShou" wx:key="id" wx:for="{{shouMa}}" src="{{item.img}}"></image>
+		<view class="bottom-view" wx:key="id" wx:for="{{shouMa}}">
+			<image  data-index="{{index}}" data-card="{{item}}" bindtap="tapShou" src="{{item.img}}"></image>
+			<View style="height:20rpx;display:{{item.select?'block':'none'}}"></View>
+		</view>
 	</view>
-	<text class="clear" bindtap="onClearClick">清空</text>
+	<button type="primary" size="mini" class="clear" bindtap="onClearClick">清空</button>
 </view>

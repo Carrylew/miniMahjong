@@ -45,7 +45,7 @@ Page({
 
   //选择下方牌型后的点击事件
   tapShou: function (event) {
-    let item = event.target.dataset.card
+    // let item = event.target.dataset.card
     let index = event.target.dataset.index
     var newShouMa = []
     this.data.shouMa.forEach((ele, i) => {
